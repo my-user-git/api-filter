@@ -1,0 +1,56 @@
+.calendar {
+  &__item {
+
+    &-logo {
+      &-link:hover {
+        opacity: .7;
+      }
+    }
+
+    &-link:hover {
+      opacity: .7;
+    }
+
+    &-link:focus {
+      opacity: .7;
+    }
+
+    &-ticket:hover {
+      color: $lilacD4;
+      background-color: $white;
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 1px solid $lilacD4;
+      }
+    }
+
+    &-ticket:focus {
+      color: $lilacD4;
+      background-color: $white;
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 1px solid $lilacD4;
+      }
+    }
+
+    &-more:hover {
+      text-decoration: none;
+    }
+
+    &-more:focus {
+      text-decoration: none;
+    }
+  }
+}

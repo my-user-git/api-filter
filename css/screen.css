@@ -1,0 +1,151 @@
+@font-face {
+	font-family: 'PTSansRegular';
+	src: local('PT Sans'),
+		url('../fonts/PTS55F_W.woff2') format('woff2'),
+		url('../fonts/PTS55F_W.woff') format('woff');
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+}
+
+HTML,
+BODY{
+	margin:0;
+	padding:0;
+	height:100%;
+	}
+
+BODY{
+	background:#FFF;
+	color:#000;
+	line-height:1.3;
+	font-family:PTSansRegular, Arial, Helvetica, sans-serif;
+	}
+A{
+	color:#00A4F7;
+	}
+	A:hover{
+		color:#000;
+		}
+.main{
+	min-width:290px;
+	position:relative;
+	text-align:center;
+	height: auto;
+	min-height: 100%;
+	padding: 0 20px;
+	}
+.body{
+	position: relative;
+	top: 0;
+	left: auto;
+	right: auto;
+	margin: 50px 0 0 0;
+	padding: 0 20px;
+	}
+.board{
+	padding:1px;
+	}
+	.board__title{
+		font-size:3.75em;
+		font-weight:normal;
+		margin:0;
+		padding:0;
+		}
+	.board__alt-title{
+		margin:0 0 0.6em;
+		padding:0;
+		color:#C1C1C1;
+		font-size:1.88em;
+		font-weight:normal;
+		}
+	.board__sub-title{
+		margin:0 auto;
+		padding:0;
+		max-width:16.3em;
+		font-size:1.5em;
+		font-weight:normal;
+		color:#1A1A1A;
+		}
+.board__row {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.board__link {
+	margin-right: 35px;
+	font-size: 18px;
+	color: inherit;
+	transition: opacity .3s ease;
+}
+.board__link:hover {
+	opacity: .8;
+}
+.download{
+	margin:20px 0 20px;
+	}
+	.download__link{
+		font-size:1.65em;
+		}
+
+.footer{
+	padding:14px 0;
+	}
+	.footer__inner {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+		.footer__title {
+			font-weight: bold;
+			margin: 10px 0 5px;
+		}
+		.footer__elem {
+			margin-bottom: 5px;
+			color:#959595;
+		}
+	.footer__items{
+		list-style:none;
+		margin:0 auto;
+		padding:0;
+		max-width:1280px;
+		}
+	.footer__item{
+		list-style:none;
+		display:inline;
+		margin:0 10px;
+		font-size:0.9em;
+		}
+		.footer__item_vacancies{
+			float:left;
+			}
+		.footer__item_map{
+			float:right;
+			}
+	.footer__link{
+		color:#959595;
+		}
+		.footer__link:hover{
+			color:#000;
+			}
+
+@media (max-width: 800px) {
+	body {
+		font-size:88%;
+		}
+	}
+
+@media (max-width: 480px) {
+	body {
+		font-size:75%;
+	}
+	.body {
+		padding: 0;
+	}
+	.body__link {
+		margin-right: 15px;
+		font-size: 16px;
+	}
+	.board__row {
+		justify-content: space-between;
+	}
+}
